@@ -1,0 +1,1018 @@
+$primary: #04b418;
+$grey: #4b4b4b;
+// ===================================================
+// =====================================  Main header =============================================
+// ===================================================
+header {
+  background: url("../assets/hero-jpg.jpg") center center no-repeat;
+  height: 100vh;
+  background-size: cover;
+}
+
+.user-login {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  font-size: 1.6rem;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
+
+.user-login img {
+  max-width: 100%;
+}
+
+.nav-links {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.nav-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid yellow;
+  gap: 4rem;
+
+  li {
+    margin-left: 5rem;
+  }
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: space-between;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-between;
+  padding: 1rem 0rem;
+}
+
+.site-main-wrapper {
+  position: relative;
+}
+
+// Mobile nav
+.hamberger {
+  position: absolute;
+  top: 50%;
+  margin-top: 2rem;
+  z-index: 11;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.icon-mobile-nav {
+  width: 2rem;
+  font-size: 10rem;
+}
+
+.hamberger img {
+  width: 100%;
+  top: 50%;
+}
+
+.logo img {
+  max-width: 100%;
+}
+
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1001;
+  font-weight: 700;
+  background: #d3f9d8;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 5rem;
+  transform: translateX(100%);
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.mobile-nav a {
+  text-align: center;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+
+.open {
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+
+.times {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.times img {
+  width: 40px;
+}
+
+.mobile-nav ul {
+  margin-top: 10rem;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.mobile-nav ul a {
+  color: #002901;
+  text-decoration: none;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.hero {
+  height: 70%;
+  display: grid;
+  place-items: center;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  margin-top: 20rem;
+}
+.hero-text button {
+  // margin-top: 10rem;
+  // margin-bottom: 10rem;
+}
+// ===================================================
+// =====================================  search filter section =============================================
+// ===================================================
+
+.filter-section {
+  padding: 4.6rem 0rem;
+}
+.filter-option {
+  background: $primary;
+  padding: 4.8rem;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filter-text {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.filter-buttons {
+  margin-top: 4.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.drop-options {
+  font-size: 1.8rem;
+  background: #fff;
+  color: #555;
+  display: flex;
+  align-items: center;
+  width: 70%;
+  padding: 1rem 3rem;
+  border-radius: 15px;
+  justify-content: space-between;
+}
+
+// ===================================== MEGA-PROJECTS  =============================================
+.projects-section {
+  padding: 4.8rem 0rem;
+}
+
+.m-card {
+  text-align: center;
+  background: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding-bottom: 1rem;
+  margin-top: 10rem;
+  width: 43rem;
+
+  img {
+    max-width: 100%;
+
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.158);
+  }
+}
+
+.card-heading {
+  color: $primary;
+  font-size: 5.5rem;
+  // font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  background: rgb(255, 255, 255);
+  margin-top: 3rem;
+
+  strong {
+    font-weight: 800;
+  }
+  span {
+    color: $grey;
+    font-weight: 400;
+    font-size: 3.6rem;
+    font-family: "Raleway", sans-serif;
+  }
+}
+.card-text {
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+.icons {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: space-between;
+  margin-top: 3.4rem;
+  img {
+    height: 2rem;
+    width: 2rem;
+    box-shadow: none;
+  }
+}
+
+.card-icons {
+  font-size: 1.6rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+// ===================================== MEGA-PROJECTS  =============================================
+.business-section {
+  padding: 4.8rem 0rem;
+}
+
+.business-wrapper {
+  position: relative;
+}
+.business-wrapper::after {
+  position: absolute;
+  content: "";
+  background: url("../assets/rocket.png") no-repeat;
+  background-size: contain;
+  top: 15%;
+  left: 57%;
+  height: 100%;
+  width: 50%;
+}
+
+.business-text {
+  h2 {
+    width: 80%;
+  }
+
+  .bussiness-para {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    width: 50%;
+    margin: 4rem 0rem;
+    color: #666;
+  }
+  .btn-wrapper {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+}
+
+// ===================================== Listing-section  =============================================
+.listing-section {
+  padding: 6.4rem 0rem;
+  .swiper-slide {
+    width: 1rem;
+  }
+}
+
+.listing-section .m-card {
+  margin-bottom: 10rem;
+  padding: 0;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  img {
+    box-shadow: none;
+    transform: scale(1.03);
+  }
+}
+
+// ===================================== Invest with us =============================================
+.invest-section {
+  padding: 4.8rem 0rem;
+}
+.invest-text {
+  .invest-btn {
+    margin-top: 5rem;
+  }
+}
+.invest-para {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin: 4rem 0rem;
+  color: #666;
+}
+
+// =====================================  Video player =============================================
+.video-player {
+  padding: 6.4rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  iframe {
+    width: 85rem;
+    height: 50rem;
+  }
+}
+
+// =====================================  Contact us section =============================================
+.contact-section {
+  padding: 6.4rem 0rem;
+
+  .contact-text {
+    width: 82%;
+    font-size: 3.6rem;
+    margin-top: 3rem;
+  }
+  .contact-para {
+    font-size: 1.6rem;
+    line-height: 1.6;
+    margin: 2rem 0rem;
+  }
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 4.8rem;
+    margin-top: 2.4rem;
+    .check-icon {
+      color: $primary;
+      margin-right: 1rem;
+    }
+    li {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+// =====================================  Review section =============================================
+.review-section {
+  padding: 6.4rem 0rem;
+
+  h2 {
+    text-transform: none;
+    letter-spacing: 1px;
+  }
+  .section-heading-special::before {
+    top: -1rem;
+    left: 25%;
+    width: 18rem;
+  }
+  .section-heading-special::after {
+    bottom: -1.5rem;
+    right: 25%;
+    height: 0.3rem;
+    width: 43rem;
+  }
+
+  .m-card {
+    text-align: center;
+    background: rgb(255, 255, 255);
+
+    border-radius: 15px;
+    padding-bottom: 1rem;
+    margin-top: 10rem;
+    width: 37rem;
+
+    img {
+      max-width: 50%;
+      border: 3px solid $primary;
+      padding: 1rem;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+  }
+
+  .card-heading {
+    color: $primary;
+    font-size: 3rem;
+    // font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    background: rgb(255, 255, 255);
+    margin-top: 3rem;
+  }
+  .card-text {
+    text-align: start;
+    padding: 4rem;
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+}
+
+// =====================================  Client =============================================
+
+.clients-section {
+  padding: 6.4rem 0rem;
+
+  .five {
+    margin-top: 10rem;
+  }
+  img {
+    max-width: 50%;
+  }
+}
+
+// =====================================  services =============================================
+
+.our-services {
+  padding: 6.4rem 0rem;
+
+  .grid {
+    align-items: center;
+    gap: 8rem;
+  }
+}
+
+.services-wrapper {
+  margin-top: 6rem;
+}
+.services-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+.residential-projects,
+.Commercial-projects {
+  padding: 2rem;
+  padding-left: 3rem;
+}
+.project-heading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: $primary;
+}
+
+.projects-list {
+  font-size: 1.8rem;
+  margin-top: 3.4rem;
+  margin-left: 2rem;
+
+  li {
+    margin-bottom: 2.4rem;
+  }
+
+  ul li {
+    position: relative;
+  }
+  ul li::before {
+    content: "";
+    position: absolute;
+    background: $primary;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    left: -5%;
+    top: 16%;
+  }
+}
+.app {
+  display: grid;
+  padding: 4rem 0rem;
+  padding-bottom: 13rem;
+  grid-template-columns: 1fr 1fr;
+  // align-items: start;
+  align-items: center;
+}
+.app-img {
+  z-index: -2;
+  // align-items: stretch;
+  justify-self: end;
+  img {
+    margin-left: 5rem;
+    margin-top: 20rem;
+    transform: scale(1.9);
+  }
+}
+
+.app-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: $primary;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .light {
+    font-weight: 400;
+  }
+
+  .app-info {
+    padding: 0rem 4rem;
+  }
+}
+.stores {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  padding-left: 3rem;
+  margin-top: 1rem;
+  img {
+    display: block;
+  }
+}
+.qr-code {
+  padding-left: 3rem;
+  margin-top: 4rem;
+}
+
+.scanner {
+  margin-left: 25%;
+}
+// =====================================  footer =============================================
+footer {
+  background: $primary;
+  color: #fff;
+  padding: 6.4rem 0rem;
+  .grid {
+    gap: 2.4rem;
+  }
+}
+
+.footer-heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 80%;
+}
+
+.footer-para {
+  width: 80%;
+  font-size: 1.6rem;
+  font-weight: 100;
+  margin: 3rem 0rem;
+  line-height: 1.8;
+  font-family: "Raleway", sans-serif;
+  span {
+    display: block;
+    a {
+      color: #3bfaea;
+      text-decoration: none;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+.socails {
+  width: 80%;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3.6rem;
+  align-items: center;
+  img {
+    width: 4rem;
+  }
+}
+
+address {
+  font-style: normal;
+  width: 85%;
+  margin: 3rem 0rem;
+  .address-text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+}
+
+.footer-nav-links {
+  margin-top: 1rem;
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    margin: 1rem 3rem;
+    display: inline-block;
+    color: #3bfaea;
+  }
+}
+// =====================================  Media Queirs =============================================
+
+// Media Query screen for 1210px
+@media screen and (max-width: 75em) {
+  header {
+    // height: 90vh;
+  }
+  .logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .nav-links {
+    font-size: 1.6rem;
+  }
+  .user-login {
+    padding: 2rem;
+  }
+
+  .sale-option {
+    padding: 3rem 4.8rem;
+  }
+
+  .sale-option .btn {
+    font-size: 1.6rem;
+  }
+
+  .business-wrapper::after {
+    height: 100%;
+    width: 40%;
+  }
+
+  .invest-section img {
+    max-width: 80%;
+  }
+
+  .contact-section {
+    img {
+      max-width: 90%;
+    }
+    .contact-text {
+      width: 90%;
+      font-size: 3.6rem;
+      margin-top: 3rem;
+      margin-left: 2rem;
+    }
+  }
+}
+
+// Media Query screen for 930px
+@media screen and (max-width: 58em) {
+  .nav-links {
+    font-size: 1.6rem;
+  }
+  .nav-wrapper {
+    gap: 2rem;
+  }
+  .logo img {
+    max-width: 100%;
+    display: none;
+  }
+
+  .hero-text {
+    margin-top: 10rem;
+  }
+  .filter-section {
+    padding: 4.6rem 1rem;
+  }
+
+  .projects-section .swiper-container {
+    padding: 0rem 10rem;
+  }
+  .listing-section .swiper-container .m-card {
+    margin-bottom: 13rem;
+  }
+}
+// Media Query screen for 864
+@media screen and (max-width: 864px) {
+  html {
+    font-size: 56%;
+  }
+  header .navbar {
+    display: none;
+  }
+  header {
+    height: 80vh;
+  }
+  .swiper-slide h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.8rem;
+  }
+  .phonelogo {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    height: 40px;
+    width: 40px;
+  }
+  .hamberger {
+    display: block;
+    top: 3px;
+    left: 20px;
+    z-index: 11;
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .navbar {
+    display: none;
+  }
+  .hamberger {
+    top: 3px;
+    right: 50px;
+    z-index: 11;
+  }
+}
+
+// Media Query screen for 720px
+@media screen and (max-width: 45em) {
+  header {
+    height: 90vh;
+  }
+  .hero-text {
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    height: 50vh;
+    margin-top: 20rem;
+  }
+
+  .listing-section .swiper-slide {
+    height: 80vh !important;
+    text-align: center;
+  }
+
+  .listing-section .m-card {
+    margin-bottom: 10rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: 31rem;
+    img {
+      box-shadow: none;
+      transform: scale(1.03);
+    }
+  }
+
+  .app {
+    // width: 90%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+  .app-img {
+    z-index: -2;
+
+    justify-self: end;
+    img {
+      margin-left: 0rem;
+      margin-top: 20rem;
+      transform: scale(1);
+    }
+  }
+}
+
+// Media Query screen for 528px
+@media screen and (max-width: 33em) {
+  html {
+    font-size: 55%;
+  }
+
+  header {
+    height: 80vh;
+  }
+  .hero-text {
+    -ms-flex-pack: justify;
+    justify-content: initial;
+    height: 50vh;
+    margin-top: 20rem;
+  }
+  .swiper-slide {
+    height: 60vh !important;
+    text-align: center;
+  }
+
+  .user-login img {
+    width: 7%;
+  }
+  .swiper-slide h2 {
+    font-weight: 800;
+    font-style: italic;
+    font-size: 4.6rem;
+  }
+  .hamberger {
+    top: 3px;
+    left: 20px;
+    z-index: 11;
+    color: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .top-bar {
+    width: 80%;
+    position: relative;
+  }
+  .top-bar a {
+    margin: 0;
+  }
+  .logo img {
+    max-width: 70%;
+    margin-left: 2rem;
+  }
+
+  .projects-section {
+    padding: 4.8rem 0rem;
+
+    .swiper-container {
+      .swiper-wrapper {
+        height: 80vh;
+        margin-top: 15rem;
+      }
+    }
+  }
+
+  .invest-section img {
+    max-width:50%;
+    display: inline-block;
+    margin: 3rem auto;
+  }
+  .our-services img {
+    max-width:50%;
+    display: inline-block;
+    margin: 0rem auto;
+  }
+
+  .our-services .grid {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+  .contact-section {
+    img {
+      max-width:50%;
+      display: inline-block;
+      margin: 3rem auto;
+    }
+  }
+  .card-heading {
+    font-size: 3.6rem;
+
+    span {
+      font-size: 2rem;
+    }
+  }
+
+  .icons {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+    justify-content: space-between;
+    margin-top: 3.4rem;
+    img {
+      height: 2rem;
+      width: 2rem;
+      box-shadow: none;
+    }
+  }
+
+  .card-icons {
+    font-size: 1.6rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .business-wrapper::after {
+    top: 60%;
+    left: 50%;
+    z-index: -2;
+    height: 100%;
+    width: 50%;
+  }
+
+
+
+  .business-text {
+    h2 {
+      width: 100%;
+    }
+
+    .bussiness-para {
+      width: 80%;
+      margin: 2rem 0rem;
+    }
+  }
+  .clients-section{
+    padding: 10rem 0rem;
+  }
+  .clients-section .swiper-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin: 1rem 0rem 5rem 0rem;
+    height: 10vh;
+}
+}
+
+// Media Query screen for 432px
+@media screen and (max-width: 27em) {
+  header {
+    height: 80vh;
+  }
+  .swiper-slide {
+    height: 57vh !important;
+    text-align: center;
+  }
+
+  .filter-option {
+    padding: 2rem 1.8rem;
+  }
+
+  .filter-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .drop-options {
+    width: 100%;
+  }
+}
